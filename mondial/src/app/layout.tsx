@@ -15,8 +15,11 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
+      className="
+       bg-white font-roboto-regular
+      "
       >
-        {children}
+         {children}
       </body>
     </html>
   );

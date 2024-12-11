@@ -22,6 +22,7 @@ export default {
       maxWidth:{
         container: "1500px",
         towcont:    "750px",
+        w350:       "350px"
       },
       margin:{
         mcentralize: "0 auto"
@@ -31,6 +32,17 @@ export default {
         mobamedium: "500px",
         tablet:     "700px",
         desktop:    "1200px"
+      },
+      backgroundImage:{
+        "aparador-mondial": "linear-gradient(rgba(231, 242, 255), rgba(231, 242, 255, .39)), url('/imgs/mondialproduct.jpg')",
+      },
+      backgroundPosition:{
+        "center-center": "center center"
+      },
+      fontSize:{
+        supertitle: "2.2rem",
+        title:       "1rem",
+        paragraph:   ".8rem"
       }
     },
   },

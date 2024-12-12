@@ -47,7 +47,7 @@ export default {
       },
       fontSize:{
         supertitle: "2.2rem",
-        title:       "1rem",
+        title:       "1.2rem",
         paragraph:   ".8rem"
       }
     },

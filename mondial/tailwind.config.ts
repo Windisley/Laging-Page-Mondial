@@ -24,13 +24,19 @@ export default {
         towcont:    "750px",
         w350:       "350px"
       },
+      minHeight:{
+        h350:  "350px"
+      },
+      maxHeight:{
+        mh350:  "350px"
+      },
       margin:{
         mcentralize: "0 auto"
       },
       screens:{
         mobasmall: "300px",
         mobamedium: "500px",
-        tablet:     "700px",
+        tablet:     "750px",
         desktop:    "1200px"
       },
       backgroundImage:{

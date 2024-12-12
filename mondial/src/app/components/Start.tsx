@@ -3,8 +3,7 @@ const Start = ()=>{
     return(
         <section className="
          w-full min-h-dvh h-full m-mcentralize
-         bg-aparador-mondial bg-no-repeat bg-center
-         bg-cover
+         bg-black
         ">
             <div className="
              w-full h-dvh m-mcentralize
@@ -19,13 +18,13 @@ const Start = ()=>{
                 ">
                     <h1 className="
                       w-4/5 text-center text-supertitle
-                      font-roboto-bold uppercase
+                      font-roboto-bold uppercase text-white
                     ">
                       Seu visual em outro nível com o Super Groom 10
                     </h1>
                     <h2 className="
                       w-4/5 text-left capitalize
-                      text-title my-4 
+                      text-title my-4 text-white 
                     ">
                        Desenvolvido para homens modernos 
                        que valorizam praticidade e um cuidado pessoal impecável. Com tecnologia avançada, design ergonômico e potência 
@@ -34,7 +33,7 @@ const Start = ()=>{
                     </h2>
                     <p className="
                       w-4/5 text-center capitalize
-                      text-paragraph my-2
+                      text-paragraph my-2 text-white
                     ">
                      Transforme sua rotina com apenas um clique.
                     </p>

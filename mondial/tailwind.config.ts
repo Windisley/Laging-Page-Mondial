@@ -22,7 +22,7 @@ export default {
       maxWidth:{
         container: "1500px",
         towcont:    "750px",
-        w350:       "350px"
+        w500:       "500px"
       },
       minHeight:{
         h350:  "350px"
@@ -48,7 +48,7 @@ export default {
       fontSize:{
         supertitle: "2.2rem",
         title:       "1.2rem",
-        paragraph:   ".8rem"
+        paragraph:   "1rem"
       }
     },
   },

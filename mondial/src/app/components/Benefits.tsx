@@ -1,6 +1,7 @@
 'use client'
+
 import Image from "next/image"
-import { Ref, RefObject, useEffect, useRef } from "react"
+import {RefObject, useEffect, useRef } from "react"
 
 
 const Benefits = ()=>{
@@ -75,14 +76,14 @@ const Benefits = ()=>{
             ">
                 <h1 className="
                  w-4/5 text-center uppercase m-mcentralize
-                 my-4 font-roboto-medium
+                 my-4 font-roboto-medium text-title
                 ">
                   benefícios do aparador de pelos Super Groom 10 da Mondial
                 </h1>
 
                 <p className="
                  w-4/5 text-center capitalize m-mcentralize
-                 my-4 
+                 my-4 font-roboto-regular
                 ">
                   Apare pelos de todas as áreas do corpo com facilidade
                 </p>
@@ -127,7 +128,7 @@ const Benefits = ()=>{
                          ">
                          <p className="
                           text-left capitalize text-paragraph
-                          text-white
+                          text-white font-roboto-regular
                          ">
                             {beneft.text}
                          </p>

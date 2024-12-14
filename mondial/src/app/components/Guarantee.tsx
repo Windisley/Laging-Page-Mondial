@@ -1,52 +1,44 @@
 'use client'
 
 import Image from "next/image"
-import { RefObject, useEffect, useRef, useState } from "react"
+import {useEffect, useRef, useState } from "react"
 
 const Guarantee = ()=>{
-    const boximg:RefObject<HTMLDivElement> = useRef(null)
-    const [Wbox, setWbox] = useState(0)
-    const contGuarantee:RefObject<HTMLDivElement> = useRef(null)
-    
-    useEffect(()=>{
-      
-    if(boximg.current){
-        const divRef:number = boximg.current.clientWidth
-        setWbox(divRef)
-             
-    }  
+    const boximg = useRef<HTMLDivElement | null>(null);
+    const [Wbox, setWbox] = useState(0);
+    const contGuarantee = useRef<HTMLDivElement | null>(null);
 
-    
-    if(contGuarantee.current){
-     const handleScrollGuarantee = ()=>{
-            
-            
-            const divGuarantee:HTMLDivElement = contGuarantee.current
-    
-            const animGuarantee:DOMRect = divGuarantee.getBoundingClientRect()
-            
-            if(animGuarantee.top < window.innerHeight && animGuarantee.bottom >= 0){
-                divGuarantee.classList.add("opacity-100")
-                divGuarantee.classList.add("translate-y-0")
-                divGuarantee.classList.remove("opacity-0")
-                divGuarantee.classList.remove("translate-y-2/4")
-              
-            }else{
-                divGuarantee.classList.remove("opacity-100")
-                divGuarantee.classList.remove("translate-y-0")
-                divGuarantee.classList.add("opacity-0")
-                divGuarantee.classList.add("translate-y-2/4")
-            }
-    
+    useEffect(() => {
+        if (boximg.current) {
+            const divRef = boximg.current.clientWidth;
+            setWbox(divRef);
         }
 
-        window.addEventListener("scroll", handleScrollGuarantee)
-        return(()=>{
-            window.removeEventListener("scroll", handleScrollGuarantee)
-        })
-    }
+        if (contGuarantee.current) {
+            const handleScrollGuarantee = () => {
+                const divGuarantee: HTMLDivElement = contGuarantee.current!;
+                const animGuarantee: DOMRect = divGuarantee.getBoundingClientRect();
 
-    }, [])
+                if (animGuarantee.top < window.innerHeight && animGuarantee.bottom >= 0) {
+                    divGuarantee.classList.add("opacity-100");
+                    divGuarantee.classList.add("translate-y-0");
+                    divGuarantee.classList.remove("opacity-0");
+                    divGuarantee.classList.remove("translate-y-2/4");
+                } else {
+                    divGuarantee.classList.remove("opacity-100");
+                    divGuarantee.classList.remove("translate-y-0");
+                    divGuarantee.classList.add("opacity-0");
+                    divGuarantee.classList.add("translate-y-2/4");
+                }
+            };
+
+            window.addEventListener("scroll", handleScrollGuarantee);
+            return () => {
+                window.removeEventListener("scroll", handleScrollGuarantee);
+            };
+        }
+    }, []);
+
 
     useEffect(()=>{
       
@@ -79,6 +71,7 @@ const Guarantee = ()=>{
              ease-in-out duration-500
              opacity-0 translate-y-2/4
             " ref={contGuarantee}>
+
               <div className="
                w-full max-w-[350px] flex
                items-center justify-center

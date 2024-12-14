@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image"
-import {RefObject, useEffect, useRef } from "react"
+import { useEffect, useRef } from "react"
 
 
 const Benefits = ()=>{
@@ -16,7 +16,7 @@ const Benefits = ()=>{
 
    const benefits:Benefit[] = [
     {src: "/imgs/barba.jpg", 
-     alt: "Para você que quer apara a Barba", 
+     alt: "Aparar barba com facilidade", 
      text: "barba",
       id:  1,
     },
@@ -24,26 +24,26 @@ const Benefits = ()=>{
      
 
      {src: "/imgs/cabelo.jpg", 
-      alt: "Para você que quer corta Cabelo", 
+      alt: "Cortar cabelos com precisão", 
       text: "cabelo",
       id:  2,
     },
 
     {src: "/imgs/body.jpg", 
-        alt: "Para você que quer Apara O Corpo", 
+        alt: "Remover pelos do corpo de forma confortável", 
         text: "corpo",
         id:  3,
       },
      
       {src: "/imgs/nariz.webp", 
-        alt: "Para você que quer remover pelos do Nariz e Orelhas", 
+        alt: "Remover pelos do nariz e orelhas", 
         text: "nariz",
         id:  4,
       },
       
    ]
 
-   const benefitsscroll:RefObject<HTMLDivElement> = useRef(null)
+   const benefitsscroll = useRef<HTMLDivElement | null>(null)
 
    useEffect(()=>{
    const handleScroll = ()=>{

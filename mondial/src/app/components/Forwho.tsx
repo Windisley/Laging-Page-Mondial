@@ -1,11 +1,11 @@
 'use client'
 
-import { RefObject, useEffect, useRef } from "react";
+import {useEffect, useRef } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 
 const Forwho = () => {
 
-    const contForWho:RefObject<HTMLDivElement> = useRef(null)
+    const contForWho= useRef<HTMLDivElement | null> (null)
 
     useEffect(()=>{
 
@@ -29,18 +29,18 @@ const Forwho = () => {
                divForWho.classList.add("opacity-0")
                divForWho.classList.add("translate-y-2/4")
             }
-  
+            
             
           }
           
         }
-
-        window.addEventListener("scroll", handleScrollWho)
-
-        return(()=>{
-          window.removeEventListener("scroll", handleScrollWho)
-        })
-     
+        
+        
+                window.addEventListener("scroll", handleScrollWho)
+        
+                return(()=>{
+                  window.removeEventListener("scroll", handleScrollWho)
+                })
     }, [])
 
   return (

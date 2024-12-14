@@ -24,12 +24,13 @@ const Start = ()=>{
                     </h1>
                     <h2 className="
                       w-4/5 text-left capitalize
-                      text-title my-4 text-white 
+                      text-paragraph my-4 text-white 
                     ">
-                       Desenvolvido para homens modernos 
-                       que valorizam praticidade e um cuidado pessoal impecável. Com tecnologia avançada, design ergonômico e potência 
-                       de 6W, o <span className="font-roboto-medium">Super Groom 10</span> é o aparador perfeito para o seu dia a dia. Seja no <span className="font-roboto-medium">rosto</span>, <span className="font-roboto-medium">cabelo</span> ou <span className="font-roboto-medium">corpo</span>, ele oferece o corte ideal com precisão e conforto.
-
+                       Projetado para homens modernos que buscam praticidade e 
+                       cuidado pessoal, o <span className="font-roboto-medium">Super Groom 10</span> combina tecnologia avançada, 
+                       design ergonômico e potência de 6W. 
+                       Ideal para <span className="font-roboto-medium">rosto</span>, <span className="font-roboto-medium">cabelo</span> e <span className="font-roboto-medium">corpo</span>, oferece cortes precisos e 
+                       confortáveis no dia a dia.
                     </h2>
                     <p className="
                       w-4/5 text-center capitalize

@@ -35,6 +35,7 @@ const Forwho = () => {
     <section
       className="
          w-full min-h-dvh h-full m-mcentralize
+         overflow-hidden
         "
     >
       <div
@@ -60,7 +61,7 @@ const Forwho = () => {
 
           <h2
             className="
-           capitalize text-left font-roboto-medium
+          w-4/5 justify-center flex capitalize text-left font-roboto-medium
           "
           >
             O Aparador Super Groom 10 foi criado para homens que
@@ -71,6 +72,7 @@ const Forwho = () => {
           className="
          w-full h-dvh flex flex-col
          items-center justify-center 
+         overflow-hidden
         "
         >
           <div

@@ -169,13 +169,13 @@ const Forwho = () => {
                 clique no botão abaixo e adiquira o seu agora mesmo.
             </p>
 
-            <a href="#" className="
+            <a href="https://amzn.to/3DhZs4I" className="
                 w-4/5 max-w-w500 p-4 max-h-full
                 rounded-lg bg-blue border border-black 
                 scale-100 ease-in-out duration-300 hover:scale-110
                 my-4 text-center uppercase font-roboto-medium text-white
 
-            ">
+            " target="_blank">
                Quero o meu
             </a>
           </div>

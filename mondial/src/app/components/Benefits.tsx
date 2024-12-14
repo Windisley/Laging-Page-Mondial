@@ -16,7 +16,7 @@ const Benefits = ()=>{
 
    const benefits:Benefit[] = [
     {src: "/imgs/barba.jpg", 
-     alt: "Você Pode Fazer Barba", 
+     alt: "Para você que quer apara a Barba", 
      text: "barba",
       id:  1,
     },
@@ -24,19 +24,19 @@ const Benefits = ()=>{
      
 
      {src: "/imgs/cabelo.jpg", 
-      alt: "Você Pode Corta o Cabelo", 
+      alt: "Para você que quer corta Cabelo", 
       text: "cabelo",
       id:  2,
     },
 
     {src: "/imgs/body.jpg", 
-        alt: "Você Pode Apara O Corpo", 
+        alt: "Para você que quer Apara O Corpo", 
         text: "corpo",
         id:  3,
       },
      
       {src: "/imgs/nariz.webp", 
-        alt: "Você Pode Apara O Corpo", 
+        alt: "Para você que quer remover pelos do Nariz e Orelhas", 
         text: "nariz",
         id:  4,
       },

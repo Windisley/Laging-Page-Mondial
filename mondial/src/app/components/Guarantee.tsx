@@ -17,27 +17,35 @@ const Guarantee = ()=>{
     }  
 
     
-    window.addEventListener("scroll", ()=>{
-        const divGuarantee:HTMLDivElement = contGuarantee.current
+    if(contGuarantee.current){
+     const handleScrollGuarantee = ()=>{
+            
+            
+            const divGuarantee:HTMLDivElement = contGuarantee.current
     
-        const animGuarantee:DOMRect = divGuarantee.getBoundingClientRect()
-        
-        if(animGuarantee.top < window.innerHeight && animGuarantee.bottom >= 0){
-            divGuarantee.classList.add("opacity-100")
-            divGuarantee.classList.add("translate-y-0")
-            divGuarantee.classList.remove("opacity-0")
-            divGuarantee.classList.remove("translate-y-2/4")
-          
-        }else{
-            divGuarantee.classList.remove("opacity-100")
-            divGuarantee.classList.remove("translate-y-0")
-            divGuarantee.classList.add("opacity-0")
-            divGuarantee.classList.add("translate-y-2/4")
+            const animGuarantee:DOMRect = divGuarantee.getBoundingClientRect()
+            
+            if(animGuarantee.top < window.innerHeight && animGuarantee.bottom >= 0){
+                divGuarantee.classList.add("opacity-100")
+                divGuarantee.classList.add("translate-y-0")
+                divGuarantee.classList.remove("opacity-0")
+                divGuarantee.classList.remove("translate-y-2/4")
+              
+            }else{
+                divGuarantee.classList.remove("opacity-100")
+                divGuarantee.classList.remove("translate-y-0")
+                divGuarantee.classList.add("opacity-0")
+                divGuarantee.classList.add("translate-y-2/4")
+            }
+    
         }
 
-    })
+        window.addEventListener("scroll", handleScrollGuarantee)
+        return(()=>{
+            window.removeEventListener("scroll", handleScrollGuarantee)
+        })
+    }
 
-    
     }, [])
 
     useEffect(()=>{

@@ -46,24 +46,32 @@ const Benefits = ()=>{
    const benefitsscroll:RefObject<HTMLDivElement> = useRef(null)
 
    useEffect(()=>{
-     window.addEventListener("scroll", ()=>{
-      const animaDiv:HTMLDivElement = benefitsscroll.current
-      const bounding:DOMRect = animaDiv.getBoundingClientRect();
-
-      if (bounding.top < window.innerHeight && bounding.bottom >= 0) {
-        animaDiv.classList.add("opacity-100")
-        animaDiv.classList.add("translate-y-0")
-        animaDiv.classList.remove("opacity-0")
-        animaDiv.classList.remove("translate-y-2/4")
-       
-       
-      }else{
-        animaDiv.classList.remove("opacity-100")
-        animaDiv.classList.remove("translate-y-0")
-        animaDiv.classList.add("opacity-0")
-        animaDiv.classList.add("translate-y-2/4")
+   const handleScroll = ()=>{
+      
+      if(benefitsscroll.current){
+        const animaDiv:HTMLDivElement = benefitsscroll.current
+        const bounding:DOMRect = animaDiv.getBoundingClientRect();
+  
+        if (bounding.top < window.innerHeight && bounding.bottom >= 0) {
+          animaDiv.classList.add("opacity-100")
+          animaDiv.classList.add("translate-y-0")
+          animaDiv.classList.remove("opacity-0")
+          animaDiv.classList.remove("translate-y-2/4")
+         
+         
+        }else{
+          animaDiv.classList.remove("opacity-100")
+          animaDiv.classList.remove("translate-y-0")
+          animaDiv.classList.add("opacity-0")
+          animaDiv.classList.add("translate-y-2/4")
+        }
+     }
       }
-     })    
+     window.addEventListener("scroll", handleScroll)
+
+     return(()=>{
+      window.removeEventListener("scroll", handleScroll)
+     })
    }, [])
 
     return(

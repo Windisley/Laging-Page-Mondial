@@ -9,26 +9,38 @@ const Forwho = () => {
 
     useEffect(()=>{
 
-      window.addEventListener("scroll", ()=>{
+   const handleScrollWho = ()=>{
+          
+        if(contForWho.current){
           const divForWho:HTMLDivElement = contForWho.current
-     
-          const animationForWho:DOMRect = divForWho.getBoundingClientRect()
-         
-          if(animationForWho.top < window.innerHeight && animationForWho.bottom >=0){
-             divForWho.classList.add("opacity-100")
-             divForWho.classList.add("translate-y-0")
-              
-             divForWho.classList.remove("opacity-0")
-             divForWho.classList.remove("translate-y-2/4")
-          }else{
-             divForWho.classList.remove("opacity-100")
-             divForWho.classList.remove("translate-y-0")
-              
-             divForWho.classList.add("opacity-0")
-             divForWho.classList.add("translate-y-2/4")
+       
+            const animationForWho:DOMRect = divForWho.getBoundingClientRect()
+           
+            if(animationForWho.top < window.innerHeight && animationForWho.bottom >=0){
+               divForWho.classList.add("opacity-100")
+               divForWho.classList.add("translate-y-0")
+                
+               divForWho.classList.remove("opacity-0")
+               divForWho.classList.remove("translate-y-2/4")
+            }else{
+               divForWho.classList.remove("opacity-100")
+               divForWho.classList.remove("translate-y-0")
+                
+               divForWho.classList.add("opacity-0")
+               divForWho.classList.add("translate-y-2/4")
+            }
+  
+            
           }
+          
+        }
 
-      })  
+        window.addEventListener("scroll", handleScrollWho)
+
+        return(()=>{
+          window.removeEventListener("scroll", handleScrollWho)
+        })
+     
     }, [])
 
   return (
@@ -148,7 +160,7 @@ const Forwho = () => {
               </p>
             </div>
           </div>
-           {/*  */}
+          
           <div
             className="
          w-4/5 flex 

@@ -27,7 +27,7 @@ const Start = ()=>{
                       text-paragraph my-4 text-white 
                     ">
                        Projetado para homens modernos que buscam praticidade e 
-                       cuidado pessoal, o <span className="font-roboto-medium">Super Groom 10</span> combina tecnologia avançada, 
+                       cuidado pessoal, o <span className="font-roboto-medium">Aparador Super Groom 10</span> combina tecnologia avançada, 
                        design ergonômico e potência de 6W. 
                        Ideal para <span className="font-roboto-medium">rosto</span>, <span className="font-roboto-medium">cabelo</span> e <span className="font-roboto-medium">corpo</span>, oferece cortes precisos e 
                        confortáveis no dia a dia.

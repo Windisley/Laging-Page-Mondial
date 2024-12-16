@@ -92,7 +92,7 @@ const Guarantee = ()=>{
                  capitalize font-roboto-regular
                  text-paragraph text-left
                 ">
-                    Adquira o Super Groom 10 sem preocupações!
+                    Adquira o aparador Super Groom 10 sem preocupações!
                     Oferecemos 30 dias de garantia para você testar e se apaixonar pelo produto. Caso não fique satisfeito, conte conosco para resolver qualquer questão.
 
                 </p>
